@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="pt">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">    
+    <link rel="stylesheet" href="./style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap" rel="stylesheet">
+    <title>Baking Heaven</title>
+</head>
+
+<body>
+    <header>
+        <div class="logo">
+            <img src="img/logo.png"alt="">
+            <h1>Baking Heaven</h1>
+        </div>
+
+        <section class="menu">
+            <ul class="menu-list">
+                <li>Início</li>
+                <li class="active">Produtos</li>
+                <li>Onde Encontrar</li>
+                <li>Contato</li>
+            </ul>
+
+            <button>
+                <i class="fas fa-times"></i>
+                <i class="fas fa-bars"></i>
+            </button>
+        </section>
+    </header>
+
+    <section class="main">
+
+        <section class="text">
+            <p class="title">Padaria Baking Heaven</p>
+            <p class="msg">Bem-vindo à Padaria Baking Heaven, o lugar onde a tradição se une ao sabor. Nossa padaria artesanal oferece uma variedade irresistível de pães frescos, bolos decorados e doces deliciosos, todos feitos com ingredientes de alta qualidade e um toque especial de carinho. Venha experimentar nossas criações e deixe-se levar por uma experiência gastronômica única.</p>
+            <button class="cta">Veja mais</button>
+        </section>
+
+        <section class="header">
+            <img src="img/header.jpg">
+        </section>
+
+    </section>
+
+
+    <script>
+        var menu = document.querySelector('.menu');
+        var menuBtn = document.querySelector('.menu button');
+        menuBtn.addEventListener('click', () => {
+            menu.classList.toggle('opened')
+        })
+    </script>
+
+</body>
+
+</html>
+
+
+
+
